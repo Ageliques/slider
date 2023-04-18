@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Слайдер</title>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="images/image1.jpg" width="1200" height="600"/></div>
+    <div class="swiper-slide"><img src="images/image2.jpg" width="1200" height="600"/></div>
+    <div class="swiper-slide"><img src="images/image3.jpg" width="1200" height="600"/></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+    pagination: {
+    el: '.swiper-pagination',
+    },
+    });
+    </script>
+    </body>
+</html>
